@@ -18,7 +18,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: -0.357143px;
-    color: #33323D;
+    color: $grayish-dark-blue;;
     margin-bottom: 40px;
   }
   
@@ -28,9 +28,9 @@
     line-height: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #33323D;
+    color: $grayish-dark-blue;;
     padding: 17px 34px;
-    border: 1px solid #33323D;
+    border: 1px solid $grayish-dark-blue;;
     box-sizing: border-box;
     text-decoration: none;
     flex-shrink: 0;
@@ -57,15 +57,13 @@
     font-size: 40px;
     line-height: 42px;
     letter-spacing: -0.357143px;
-    color: #33323D;
+    color: $grayish-dark-blue;;
   }
   
   .contact-page__desc {
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 30px;
-    color: #33323D;
+    color: $grayish-dark-blue;;
     mix-blend-mode: normal;
     opacity: 0.8;
     margin: 24px 0;
@@ -79,3 +77,89 @@
     fill: black;
   }
   
+
+  @media only screen and (min-width: 689px) {
+  
+    
+  .contact {
+    @include flex-style;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact__heading {
+    font-family: $font-ibarra;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: start;
+    letter-spacing: -0.357143px;
+    color: $grayish-dark-blue;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact__heading::after {
+    content: "";
+    display: block;
+    border-top: 1px solid black;
+    margin-right: 32px;
+    width: 100%;
+    margin-left: 32px;
+    height: 2px;
+  }
+  
+  .contact__link {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $grayish-dark-blue;
+    padding: 17px 34px;
+    border: 1px solid $grayish-dark-blue;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 1075px) {
+
+    .contact__heading {
+        font-family: $font-ibarra;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: start;
+        letter-spacing: -0.357143px;
+        color:  $grayish-dark-blue;
+        margin-bottom: 40px;
+        @include flex-style;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .contact__heading::after {
+        content: "";
+        display: block;
+        border-top: 1px solid black;
+        margin-right: 32px;
+        width: 100%;
+        margin-left: 32px;
+        height: 2px;
+      }
+
+
+}
