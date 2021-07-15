@@ -1,0 +1,21 @@
+
+.socials__list {
+    display: flex;
+    align-items: center;
+    @include zero-m-p;
+  }
+  
+  .socials_item:not(:last-child) {
+    margin-right: 24px;
+  }
+  
+  .svg-icons {
+    fill: #FEFCF7;
+    @include transform-style;
+  }
+  
+  .svg-icons:hover {
+   fill:var(--grayish-green);
+  }
+  
+  
