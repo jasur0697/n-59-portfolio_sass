@@ -64,3 +64,53 @@
   .submit__button:hover {
   opacity: 0.7;
   }
+
+  @media only screen and (min-width: 689px) {
+  
+    .form__container {
+      display: flex;
+      flex-direction: column;
+    }
+    .submit__button {
+        width: 200px;
+      }
+
+    .form__input {
+    background-color:  #dddada;
+    border: none;
+    padding: 9px;
+    opacity: 0.8;
+    margin-bottom: 24px;
+    width: 635px;
+    }
+}
+
+
+@media only screen and (min-width: 1075px) {
+    
+    
+    .contact-page__content {
+        width: 635px;
+      }
+        
+      .contact_textarea {
+        resize: none;
+        width: 100%;
+        height: 96px;
+      }
+  
+      .form__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 48px;
+      }
+  
+      .form__heading {
+        width: 350px;
+        margin-right: 125px;
+        margin-top: 0;
+    }
+
+}
