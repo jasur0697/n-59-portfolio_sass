@@ -1,0 +1,81 @@
+
+
+/* CONTACT */
+
+.contact {
+    margin-top: 115px;
+    @include flex-style;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contact__heading {
+    font-family: $font-ibarra;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 40px;
+  }
+  
+  .contact__link {
+    font-family: "Public Sans";
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    padding: 17px 34px;
+    border: 1px solid #33323D;
+    box-sizing: border-box;
+    text-decoration: none;
+    flex-shrink: 0;
+    @include transform-style;
+  }
+  
+  .contact__link:hover {
+    background-color: $grayish-dark-blue;
+    color: white;
+  }
+  
+  .contact__page {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #33323d3b;
+    border-top: 1px solid #33323d3b;
+    padding: 24px 0;
+  }
+  
+  .contact-page__heading {
+    font-family: $font-ibarra;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+  }
+  
+  .contact-page__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin: 24px 0;
+  }
+  
+  .socials__list {
+    list-style: none;
+  }
+  
+  .contact_soc svg {
+    fill: black;
+  }
+  

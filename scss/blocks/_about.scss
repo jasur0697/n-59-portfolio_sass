@@ -1,0 +1,87 @@
+
+.about_container {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+  
+  }
+  
+  .about__link {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $very-light-white;
+    background-color: var(--dark-blue);
+    padding: 17px 0;
+    text-decoration: none;
+    width: 152px;
+    cursor: pointer;
+  
+  }
+  
+  .about_icon {
+    background-image: url(../images/about_icon.svg);
+    background-color:  $dark-blue;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    width: 48px;
+    height: 47px;
+    display: block;
+    padding: 18px 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+
+@media only screen and (min-width: 1075px) { 
+  
+.about_container {
+    width: 200px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.about__link {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: v$dark-blue;
+    padding: 17px 0;
+    text-decoration: none;
+    width: 152px;
+    cursor: pointer;
+}
+
+.about_icon {
+    background-image: url(../images/about_icon.svg);
+    background-color:  #10202c;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    width: 48px;
+    height: 48px;
+    display: block;
+    padding: 17px 18px;
+    border: none;
+    cursor: pointer;
+}
+  
+  }
+  

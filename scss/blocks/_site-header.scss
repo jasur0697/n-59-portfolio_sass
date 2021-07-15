@@ -1,0 +1,52 @@
+  /* site-header */
+  .site-header {
+    @include flex-style; 
+    padding-top: 32px;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-header__logo-link {
+    text-decoration: none;
+    display: block;
+    flex-shrink: 0;
+    margin-right: auto;
+  }
+  
+  .site-header__button {
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/hamburger-menu-icon.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .site-header--open .site-header__button {
+    background-image: url(../images/close-button.svg);
+  }
+  
+  .site-header--open .site-nav {
+    display: block;
+  }
+  
+
+  
+@media only screen and (min-width: 689px) {
+  .site-header {
+    padding-top: 40px;
+    padding-bottom: 52px;
+    @include flex-style;
+    justify-content: space-between;
+  
+    }
+  
+  .site-header__button {
+    display: none;
+    background-color: transparent;
+    }
+
+}

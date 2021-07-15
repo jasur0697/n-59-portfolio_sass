@@ -1,0 +1,42 @@
+.personal_pic-desk {
+  display: none;
+}
+
+.personal_pic-tab {
+  display: none;
+}
+
+
+@media only screen and (min-width: 689px) {
+
+.personal_pic-mob {
+  display: none;
+  width: 281px;
+  }
+
+.personal_pic-tab {
+  display: block;
+  margin-right: 60px;
+  }
+    
+.personal_pic-desk {
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 1075px) { 
+.personal_pic-mob {
+  display: none;
+  }
+
+.personal_pic-tab {
+  display: none;
+  margin-right: 60px;
+  }
+
+.personal_pic-desk {
+  display: block;
+}
+
+}

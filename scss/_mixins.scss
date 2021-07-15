@@ -1,0 +1,23 @@
+@mixin list-unstyle {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+} 
+
+@mixin zero-m-p {
+  padding:0;
+  margin: 0;
+} 
+
+@mixin flex-style {
+  display:flex;
+  align-items: center;
+} 
+
+@mixin  transform-style {
+  transition: 0.2s ease-in-out 0s;
+  -moz-transition: 0.2s ease-in-out 0s;
+  -webkit-transition: 0.2s ease-in-out 0s;
+  -o-transition: 0.2s ease-in-out 0s;
+}
+
